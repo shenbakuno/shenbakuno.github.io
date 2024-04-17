@@ -1,0 +1,504 @@
+<!DOCTYPE html><html lang=en><head><title>黑洞實驗室 - 資料整理</title><meta charset=utf-8><meta name=viewport content="width=device-width"><style>@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-400.woff2");font-family:gg sans;font-weight:400;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-500.woff2");font-family:gg sans;font-weight:500;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-600.woff2");font-family:gg sans;font-weight:600;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-700.woff2");font-family:gg sans;font-weight:700;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-800.woff2");font-family:gg sans;font-weight:800;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-400.woff2");font-family:gg sans;font-weight:400;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-500.woff2");font-family:gg sans;font-weight:500;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-600.woff2");font-family:gg sans;font-weight:600;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-700.woff2");font-family:gg sans;font-weight:700;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-800.woff2");font-family:gg sans;font-weight:800;font-style:italic}html,body{margin:0;padding:0;background-color:#36393e;color:#dcddde;font-family:"gg sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;font-weight:400;scroll-behavior:smooth}a{color:#00aff4;text-decoration:none}a:hover{text-decoration:underline}img{object-fit:contain;image-rendering:high-quality;image-rendering:-webkit-optimize-contrast}.preamble{display:grid;grid-template-columns:auto 1fr;max-width:100%;padding:1rem}.preamble__guild-icon-container{grid-column:1}.preamble__guild-icon{max-width:88px;max-height:88px}.preamble__entries-container{grid-column:2;margin-left:1rem}.preamble__entry{margin-bottom:0.15rem;color:#ffffff;font-size:1.4rem}.preamble__entry--small{font-size:1rem}.chatlog{padding:1rem 0;width:100%;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1)}.chatlog__message-group{margin-bottom:1rem}.chatlog__message-container{background-color:transparent;transition:background-color 1s ease}.chatlog__message-container--highlighted{background-color:rgba(114,137,218,0.2)}.chatlog__message-container--pinned{background-color:rgba(249,168,37,0.05)}.chatlog__message{display:grid;grid-template-columns:auto 1fr;padding:0.15rem 0;direction:ltr;unicode-bidi:bidi-override}.chatlog__message:hover{background-color:#32353b}.chatlog__message:hover .chatlog__short-timestamp{display:block}.chatlog__message-aside{grid-column:1;width:72px;padding:0.15rem 0.15rem 0 0.15rem;text-align:center}.chatlog__reply-symbol{height:10px;margin:6px 4px 4px 36px;border-left:2px solid #4f545c;border-top:2px solid #4f545c;border-radius:8px 0 0 0}.chatlog__avatar{width:40px;height:40px;border-radius:50%}.chatlog__short-timestamp{display:none;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__message-primary{grid-column:2;min-width:0}.chatlog__reply{display:flex;margin-bottom:0.15rem;align-items:center;color:#b5b6b8;font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chatlog__reply-avatar{width:16px;height:16px;margin-right:0.25rem;border-radius:50%}.chatlog__reply-author{margin-right:0.3rem;font-weight:600}.chatlog__reply-content{overflow:hidden;text-overflow:ellipsis}.chatlog__reply-link{cursor:pointer}.chatlog__reply-link *{display:inline;pointer-events:none}.chatlog__reply-link .chatlog__markdown-quote{display:inline}.chatlog__reply-link .chatlog__markdown-pre{display:inline}.chatlog__reply-link:hover{color:#ffffff}.chatlog__reply-link:hover *:not(.chatlog__markdown-spoiler){color:inherit}.chatlog__reply-edited-timestamp{margin-left:0.25rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-icon{width:18px;height:18px}.chatlog__system-notification-author{font-weight:500;color:#ffffff}.chatlog__system-notification-content{color:#96989d}.chatlog__system-notification-link{font-weight:500;color:#ffffff}.chatlog__system-notification-timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-timestamp a{color:inherit}.chatlog__header{margin-bottom:0.1rem}.chatlog__author{font-weight:500;color:#ffffff}.chatlog__author-tag{position:relative;top:-0.1rem;margin-left:0.3rem;padding:0.05rem 0.3rem;border-radius:3px;background-color:#5865F2;color:#ffffff;font-size:0.625rem;font-weight:500;line-height:1.3}.chatlog__timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__timestamp a{color:inherit}.chatlog__content{padding-right:1rem;font-size:0.95rem;word-wrap:break-word}.chatlog__edited-timestamp{margin-left:0.15rem;color:#a3a6aa;font-size:0.75rem;font-weight:500}.chatlog__attachment{position:relative;width:fit-content;margin-top:0.3rem;border-radius:3px;overflow:hidden}.chatlog__attachment--hidden{cursor:pointer;box-shadow:0 0 1px 1px rgba(0,0,0,0.1)}.chatlog__attachment--hidden *{pointer-events:none}.chatlog__attachment-spoiler-caption{display:none;position:absolute;left:50%;top:50%;z-index:999;padding:0.4rem 0.8rem;border-radius:20px;transform:translate(-50%,-50%);background-color:rgba(0,0,0,0.9);color:#dcddde;font-size:0.9rem;font-weight:600;letter-spacing:0.05rem}.chatlog__attachment--hidden .chatlog__attachment-spoiler-caption{display:block}.chatlog__attachment--hidden:hover .chatlog__attachment-spoiler-caption{color:#fff}.chatlog__attachment-media{max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__attachment--hidden .chatlog__attachment-media{filter:blur(44px)}.chatlog__attachment-generic{max-width:520px;width:100%;height:40px;padding:10px;border:1px solid #292b2f;border-radius:3px;background-color:#2f3136;overflow:hidden}.chatlog__attachment--hidden .chatlog__attachment-generic{filter:blur(44px)}.chatlog__attachment-generic-icon{float:left;width:30px;height:100%;margin-right:10px}.chatlog__attachment-generic-size{color:#72767d;font-size:12px}.chatlog__attachment-generic-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.chatlog__embed{display:flex;margin-top:0.3rem;max-width:520px}.chatlog__embed-color-pill{flex-shrink:0;width:0.25rem;border-top-left-radius:3px;border-bottom-left-radius:3px}.chatlog__embed-color-pill--default{background-color:#202225}.chatlog__embed-content-container{display:flex;flex-direction:column;padding:0.5rem 0.6rem;border:1px solid rgba(46,48,54,0.6);border-top-right-radius:3px;border-bottom-right-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-content{display:flex;width:100%}.chatlog__embed-text{flex:1}.chatlog__embed-author-container{display:flex;margin-bottom:0.5rem;align-items:center}.chatlog__embed-author-icon{width:20px;height:20px;margin-right:0.5rem;border-radius:50%}.chatlog__embed-author{color:#ffffff;font-size:0.875rem;font-weight:600;direction:ltr;unicode-bidi:bidi-override}.chatlog__embed-author-link{color:#ffffff}.chatlog__embed-title{margin-bottom:0.5rem;color:#ffffff;font-size:0.875rem;font-weight:600}.chatlog__embed-description{color:#dcddde;font-weight:500;font-size:0.85rem}.chatlog__embed-fields{display:flex;flex-wrap:wrap;gap:0 0.5rem}.chatlog__embed-field{flex:0;min-width:100%;max-width:506px;padding-top:0.6rem;font-size:0.875rem}.chatlog__embed-field--inline{flex:1;flex-basis:auto;min-width:50px}.chatlog__embed-field-name{margin-bottom:0.2rem;color:#ffffff;font-weight:600}.chatlog__embed-field-value{color:#dcddde;font-weight:500}.chatlog__embed-thumbnail{flex:0;max-width:80px;max-height:80px;margin-left:1.2rem;border-radius:3px}.chatlog__embed-images{display:grid;margin-top:0.6rem;grid-template-columns:repeat(2,1fr);gap:0.25rem}.chatlog__embed-images--single{display:block}.chatlog__embed-image{object-fit:cover;object-position:center;max-width:500px;max-height:400px;width:100%;height:100%;border-radius:3px}.chatlog__embed-footer{margin-top:0.6rem;color:#dcddde}.chatlog__embed-footer-icon{width:20px;height:20px;margin-right:0.2rem;border-radius:50%;vertical-align:middle}.chatlog__embed-footer-text{vertical-align:middle;font-size:0.75rem;font-weight:500}.chatlog__embed-invite-container{min-width:320px;padding:0.6rem 0.7rem;border:1px solid rgba(46,48,54,0.6);border-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-invite-title{margin:0 0 0.8rem 0;color:#b9bbbe;font-size:0.75rem;font-weight:700;text-transform:uppercase}.chatlog__embed-invite{display:flex}.chatlog__embed-invite-guild-icon{width:50px;height:50px;border-radius:0.85rem}.chatlog__embed-invite-info{margin-left:1rem}.chatlog__embed-invite-guild-name{color:#ffffff;font-weight:600}.chatlog__embed-invite-guild-name a{color:inherit}.chatlog__embed-invite-channel-icon{width:18px;height:18px;vertical-align:bottom}.chatlog__embed-invite-channel-name{font-size:0.9rem;font-weight:600}.chatlog__embed-generic-image{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-video{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-gifv{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-spotify{border:0}.chatlog__embed-twitch{border:0}.chatlog__embed-youtube-container{margin-top:0.6rem}.chatlog__embed-youtube{border:0;border-radius:3px}.chatlog__sticker{width:180px;height:180px}.chatlog__sticker--media{max-width:100%;max-height:100%}.chatlog__reactions{display:flex}.chatlog__reaction{display:flex;margin:0.35rem 0.1rem 0.1rem 0;padding:0.125rem 0.375rem;border:1px solid transparent;border-radius:8px;background-color:#2f3136;align-items:center}.chatlog__reaction:hover{border:1px solid hsla(0,0%,100%,.2);background-color:transparent}.chatlog__reaction-count{min-width:9px;margin-left:0.35rem;color:#b9bbbe;font-size:0.875rem}.chatlog__reaction:hover .chatlog__reaction-count{color:#dcddde}.chatlog__markdown{max-width:100%;line-height:1.3;overflow-wrap:break-word}.chatlog__markdown h1{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.5rem;line-height:1}.chatlog__markdown h2{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.25rem;line-height:1}.chatlog__markdown h3{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1rem;line-height:1}.chatlog__markdown h1:first-child,h2:first-child,h3:first-child{margin-top:0.5rem}.chatlog__markdown ul,ol{margin:0 0 0 1rem;padding:0}.chatlog__markdown-preserve{white-space:pre-wrap}.chatlog__markdown-spoiler{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__markdown-spoiler--hidden{cursor:pointer;background-color:#202225;color:rgba(0,0,0,0)}.chatlog__markdown-spoiler--hidden:hover{background-color:rgba(32,34,37,0.8)}.chatlog__markdown-spoiler--hidden::selection{color:rgba(0,0,0,0)}.chatlog__markdown-quote{display:flex;margin:0.05rem 0}.chatlog__markdown-quote-border{margin-right:0.5rem;border:2px solid #4f545c;border-radius:3px}.chatlog__markdown-pre{background-color:#2f3136;font-family:"Consolas","Courier New",Courier,monospace;font-size:0.85rem;text-decoration:inherit}.chatlog__markdown-pre--multiline{display:block;margin-top:0.25rem;padding:0.5rem;border:2px solid #282b30;border-radius:5px;color:#b9bbbe}.chatlog__markdown-pre--multiline.hljs{background-color:#2f3136;color:#b9bbbe}.chatlog__markdown-pre--inline{display:inline-block;padding:2px;border-radius:3px}.chatlog__markdown-mention{border-radius:3px;padding:0 2px;background-color:rgba(88,101,242,.3);color:#dee0fc;font-weight:500}.chatlog__markdown-mention:hover{background-color:#5865f2;color:#ffffff}.chatlog__markdown-timestamp{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__emoji{width:1.325rem;height:1.325rem;margin:0 0.06rem;vertical-align:-0.4rem}.chatlog__emoji--small{width:1rem;height:1rem}.chatlog__emoji--large{width:2.8rem;height:2.8rem}.postamble{padding:1.25rem}.postamble__entry{color:#ffffff}</style><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e=>hljs.highlightBlock(e));});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e=>{const anim=lottie.loadAnimation({container:e,renderer:'svg',loop:true,autoplay:true,path:e.getAttribute('data-source')});anim.addEventListener('data_failed',()=>e.innerHTML='<strong>[Sticker cannot be rendered]</strong>');});});</script><script>function scrollToMessage(event,id){const element=document.getElementById('chatlog__message-container-'+id);if(!element)
+return;event.preventDefault();element.classList.add('chatlog__message-container--highlighted');window.scrollTo({top:element.getBoundingClientRect().top-document.body.getBoundingClientRect().top-(window.innerHeight/2),behavior:'smooth'});window.setTimeout(()=>element.classList.remove('chatlog__message-container--highlighted'),2000);}
+function showSpoiler(event,element){if(!element)
+return;if(element.classList.contains('chatlog__attachment--hidden')){event.preventDefault();element.classList.remove('chatlog__attachment--hidden');}
+if(element.classList.contains('chatlog__markdown-spoiler--hidden')){event.preventDefault();element.classList.remove('chatlog__markdown-spoiler--hidden');}}</script><svg style=display:none xmlns=http://www.w3.org/2000/svg><defs><symbol id=attachment-icon viewBox="0 0 720 960"><path fill=#f4f5fb d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z /><path fill=#7789c4 d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z /><path fill=#f4f5fb d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z /><path fill=#7789c4 d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z /></symbol><symbol id=join-icon viewBox="0 0 18 18"><path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" /></symbol><symbol id=leave-icon viewBox="0 0 18 18"><path fill=#ed4245 d="m3.8 8 3.6-3.6-1.4-1.4-6 6 6 6 1.4-1.4-3.6-3.6h14.2v-2" /></symbol><symbol id=call-icon viewBox="0 0 18 18"><path fill=#3ba55c fill-rule=evenodd d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" /></symbol><symbol id=pencil-icon viewBox="0 0 18 18"><path fill=#99aab5 d="m0 14.25v3.75h3.75l11.06-11.06-3.75-3.75zm17.71-10.21c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75z" /></symbol><symbol id=pin-icon viewBox="0 0 18 18"><path fill=#b9bbbe d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" /></symbol><symbol id=channel-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z" /></symbol><symbol id=thread-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z" /><path fill=#b9bbbe d="M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z" /></symbol></defs></svg><body><div class=preamble><div class=preamble__guild-icon-container><img class=preamble__guild-icon src="https://cdn.discordapp.com/icons/1079633597671145492/f5fe04c4bc86c5d9c83e7c0243967de0.png?size=512" alt="Guild icon" loading=lazy></div><div class=preamble__entries-container><div class=preamble__entry>黑洞實驗室</div><div class=preamble__entry>瓶中小人- 蒼單人團 / 資料整理</div></div></div>
+<div class="chatlog">
+
+<div class=chatlog__message-group><div id=chatlog__message-container-1079642248280559627 class=chatlog__message-container data-message-id=1079642248280559627><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年2月27日 下午 01:52"><a href=#chatlog__message-container-1079642248280559627>2023/2/27 下午 01:52</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>【系統】：CoC 7th 魔改克蘇魯風
+【劇本】：瓶中小人在哪裡 
+【形式】：非即時文字BL粉紅團 
+【背景】：1980年代的紐約 
+【故事介紹】： 調查員在紐約市警局工作，從一開始就被捲入了連環殺人魔「噬腦人魔」的事件中，而到了最後他們會發現，沖破真相迷霧所需要的除了勇氣之外，還需要非常大膽的想像力。
+
+【角色需求】：有警察背景BL遊戲主角
+【建議技能】：警察 EDU + (DEX or STR) 戰鬥 (空手)、 火器、 急救、 交際技能、 法律、 心理學、 偵察、下列選一： 駕駛車類或騎乘。
+
+【注意事項】：
+BL粉紅團劇情走向，所有關鍵人物都可以攻略，有好感度量表可以查詢。
+劇情不要太認真，主旨就在談戀愛。
+正篇尺度 R15+輔導級，番外尺度 R18+ 限制級。
+原始劇本為魔改克蘇魯風，二改為高自由度沙盒模組，判骰的比例可能不會很高，調查員的想法、個性、喜好和選擇可能會比骰運更重要。
+所有的環境、物件、人物都可以在能力內自由觀察互動，不需要觀察骰。
+某些路線有必然會踩的劇情坑無法迴避，即死事件發生前會警告＋可以上一步，但請根據合理性謹慎使用。</span> <span class=chatlog__edited-timestamp title="2023年5月29日 上午 02:09">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1079679084772200488 class=chatlog__message-container data-message-id=1079679084772200488><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年2月27日 下午 04:19"><a href=#chatlog__message-container-1079679084772200488>2023/2/27 下午 04:19</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>＿＿＿＿＿＿＿＿＿＿
+
+紐約市警局資料
+
+紐約市警局在第一警察廣場（1 Police Plaza 暱稱是：1PP ）
+為於紐約州紐約市曼哈頓下城區，緊鄰紐約市政政廳</span> <span class=chatlog__edited-timestamp title="2023年2月27日 下午 04:54">(edited)</span></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1079637927027560520/1079679084407308348/NYPDHQNewYorkCityNY.png?ex=662f5801&amp;is=661ce301&amp;hm=d211347b0911a5586d73265bd45ab6686c747e8b56232750d4ad998c335f648d&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1079637927027560520/1079679084407308348/NYPDHQNewYorkCityNY.png?ex=662f5801&amp;is=661ce301&amp;hm=d211347b0911a5586d73265bd45ab6686c747e8b56232750d4ad998c335f648d&amp;" alt="Image attachment" title="Image: NYPDHQNewYorkCityNY.png (6.11 MB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1079685702033350706 class=chatlog__message-container data-message-id=1079685702033350706><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年2月27日 下午 04:45"><a href=#chatlog__message-container-1079685702033350706>2023/2/27 下午 04:45</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>你隸屬於紐約市警察局 (NYPD)/調查局/特調處/重案組   (辦公室在八樓)
+
+頂頭上司分別是
+威爾斯˙洛克斐勒 Wells Rockefeller   紐約調查局總警監 (Bureau Chief)
+白人中年男性，黑褐色夾雜白髮的威嚴警監，眉頭一咒案情不單純的智囊型總警監。
+
+湯瑪斯˙納爾森 Thomas Nelson 特別調查科長 (Inspector)
+戴著眼鏡的黑人中年男性，嚴肅的外表下有溫和的一面，據說年輕時曾經是神槍手。
+
+羅伯特˙鮑恩  Robert Bowen  重案組探長 (Police Lieutenant)
+健壯熟男硬漢，滿頭紅髮和鬍子，沒耐心只說重點、多問會覺得煩，拼命三郎的型的警察。
+
+協助你探案的有
+犯罪現場組 (CSU) 的鑑識人員&amp;法醫
+警犬組（K9）的訓練員和警犬</span> <span class=chatlog__edited-timestamp title="2023年3月15日 下午 03:20">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1079691464784744568 class=chatlog__message-container data-message-id=1079691464784744568><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年2月27日 下午 05:08"><a href=#chatlog__message-container-1079691464784744568>2023/2/27 下午 05:08</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>1980年使用的左輪手槍是 Smith &amp; Wesson Model 10 （Military &amp; Police）使用.38 Special彈藥，6發彈匣。
+傷害1D10
+
+半自動手槍是Smith &amp; Wesson Model 39，使用9公釐帕拉貝倫彈，8發彈匣。傷害1D10
+
+1980年代珍貴的紐約市曼哈頓地圖
+<a href="https://drive.google.com/file/d/15_yKVqSjW5garN1alEBtwkD7kTFryy0x/view?usp=sharing">https://drive.google.com/file/d/15_yKVqSjW5garN1alEBtwkD7kTFryy0x/view?usp=sharing</a></span> <span class=chatlog__edited-timestamp title="2023年6月12日 上午 01:22">(edited)</span></div><div class=chatlog__embed><div class="chatlog__embed-color-pill chatlog__embed-color-pill--default"></div><div class=chatlog__embed-content-container><div class=chatlog__embed-content><div class=chatlog__embed-text><div class=chatlog__embed-title><a class=chatlog__embed-title-link href="https://drive.google.com/file/d/15_yKVqSjW5garN1alEBtwkD7kTFryy0x/view?usp=sharing"><div class="chatlog__markdown chatlog__markdown-preserve">1980年紐約市地圖.png</div></a></div></div></div></div></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1079704148863373333 class=chatlog__message-container data-message-id=1079704148863373333><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年2月27日 下午 05:58"><a href=#chatlog__message-container-1079704148863373333>2023/2/27 下午 05:58</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>瓶中小人團地圖 （地點隨劇情增加中
+<a href="https://www.google.com/maps/d/u/0/edit?mid=16rA-TX9D0oRifbI66ObzamLaRxqk4IA&amp;usp=sharing">https://www.google.com/maps/d/u/0/edit?mid=16rA-TX9D0oRifbI66ObzamLaRxqk4IA&amp;usp=sharing</a></span> <span class=chatlog__edited-timestamp title="2023年4月24日 下午 03:25">(edited)</span></div><div class=chatlog__embed><div class="chatlog__embed-color-pill chatlog__embed-color-pill--default"></div><div class=chatlog__embed-content-container><div class=chatlog__embed-content><div class=chatlog__embed-text><div class=chatlog__embed-title><a class=chatlog__embed-title-link href="https://www.google.com/maps/d/u/0/edit?mid=16rA-TX9D0oRifbI66ObzamLaRxqk4IA&amp;usp=sharing"><div class="chatlog__markdown chatlog__markdown-preserve">瓶中小人團 - Google My Maps</div></a></div><div class=chatlog__embed-description><div class="chatlog__markdown chatlog__markdown-preserve">1983年的紐約</div></div></div><div class=chatlog__embed-thumbnail-container><a class=chatlog__embed-thumbnail-link href=https://images-ext-1.discordapp.net/external/9c02mS-DfRciEKfPsLq9yOiyEZcy_CMISKQV3OhBuCA/%3Fmid%3D16rA-TX9D0oRifbI66ObzamLaRxqk4IA/https/www.google.com/maps/d/thumbnail> <img class=chatlog__embed-thumbnail src=https://images-ext-1.discordapp.net/external/9c02mS-DfRciEKfPsLq9yOiyEZcy_CMISKQV3OhBuCA/%3Fmid%3D16rA-TX9D0oRifbI66ObzamLaRxqk4IA/https/www.google.com/maps/d/thumbnail alt=Thumbnail loading=lazy> </a></div></div></div></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1085462771887517766 class=chatlog__message-container data-message-id=1085462771887517766><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年3月15日 下午 03:21"><a href=#chatlog__message-container-1085462771887517766>2023/3/15 下午 03:21</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>重案組同事：
+
+
+戴蒙˙拉森  Damon Larsen 警探 (Detective)
+
+瑞典與丹麥裔混血，棕色微捲髮、綠色眼睛，開朗好相處同時認真細心，與萊恩搭擋辦案效率很高。
+下班會穿夾克騎重機 Harley XR 1000 Sportster。喜歡彈吉他，酒量奇佳是萊恩酒友，在布魯克林有單身公寓。有時候會約萊恩來公寓，喝啤酒看球賽之類的（？
+父母是嬉皮居無定所（可能在某處的森林彩繪「和平小巴」拖車），從小長在嬉皮社群有極大的自由，戴蒙反而長成一個熱愛工作的人，平常愛開玩笑但對案情很認真。有一位乾妹黛安，目前在旅行社工作，也是脫離嬉皮社群的小孩。
+
+三年來和萊恩一起破獲的案件包括：
+「校園炸彈客」你們一起扮成道爾頓學校 (The Dalton School) 的低年級老師（萊恩扮成體育老師，戴蒙扮成音樂老師）最後找到安裝在表演廳天花板的炸彈，並抓住炸彈客，在不引起恐慌的情況下解決了危機。
+事件結束後，戴蒙有時候仍會開玩笑叫萊恩「卡特老師」，結果到萊恩家就被艾瑪＆艾瑞克叫「拉森老師」。
+
+「達科他公寓槍擊案」1980約翰藍儂槍擊案，戴蒙負責現場盤問犯人查普曼，萊恩開警車送藍儂去醫院。萊恩在警車上問：「你是約翰&#183;藍儂嗎？」藍儂輕輕點頭，回答說：「是的。」隨後很快就失去了意識。萊恩成為聽到約翰藍儂遺言的警察，兩人還一起受新聞媒體訪問。報導和照片被戴蒙剪下來，用小相框擺在萊恩的辦公桌上。
+
+「公園大道豪宅謀殺案」一起到豪宅中探查多位繼承人謀殺的疑案。在爾虞我詐的繼承人之間，女僕乍看起來善良又無辜，而且沒有犯案動機。當戴蒙查出她是真兇時受到不小衝擊，只好承認推理錯誤請客吃飯。
+
+上週受羅伯特調派，負責協助聯邦調查局「議員貪汙謀殺案」，剛結束相關偵察回到局裡。</span> <span class=chatlog__edited-timestamp title="2023年8月4日 上午 12:01">(edited)</span></div></div></div></div><div id=chatlog__message-container-1085462949394645042 class=chatlog__message-container data-message-id=1085462949394645042><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2023年3月15日 下午 03:22">下午 03:22</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>＿＿＿
+
+約書亞˙杜邦 Joshua Dupont 警探 (喬許 Josu&#233; )
+
+疑似法裔混血，栗色頭髮，頗有壓迫感的棕色眼睛。
+從小受盡霸凌，立志要成為完美破案的正義警探。不喜歡本名約書亞，大家叫他喬許才有回應，戴蒙跟他開玩笑時會露出無奈或嫌棄的表情。
+不苟言笑的完美主義者，無法對任何事物感到滿意，即使滿意也表現得很漠然，常常在警局加班到很晚。大案偵破後，會去法式餐酒館獨酌慶祝，被同事發現就會很尷尬。
+這幾天負責布朗克斯的大小縱火案，整天疲於奔命。更糟的是羅伯特探長要他負責帶重案組新人了解警務，讓喬許臉色更加難看。
+＿＿＿
+
+艾米&#183;林 Amy Lin 警探
+
+亞裔美國女警，黑髮綁馬尾，身材纖細卻爆發力很強。平常和喬許搭擋調查，是唯一因細心獲得完美主義喬許認可的搭擋。
+有時候會和萊恩、戴蒙一起去慢跑。（喬許不跟大家社交，他都上健身房）住在布魯克林區的落日公園附近的唐人區。短跑健將，喜歡棒球，常常和鑑識調查科的阿納亞警探去棒球比賽。
+似乎對萊恩有好感，和萊恩單獨講話會有點臉紅。廚藝非常好，常常帶自製的點心來警局請大家吃，也熟知唐人街所有的餐廳。
+
+＿＿＿
+
+博納˙豪爾 Bernard Hall 警探 (自稱巴迪 Buddy)
+新人巴迪，在警校成績優異所以直接被派來市警局，目前由喬許帶著熟悉警務。
+個頭嬌小、寶寶藍眼睛、柔軟的金褐髮，吃東西像小型犬。
+話撈又熱情，對萊恩和戴蒙的事蹟如數家珍，就住在警局附近的聯合廣場，似乎有點背景？
+
+調查揭露背景：
+爸爸是現任紐約市長愛德華˙豪爾（Edward Hall）外交時用的中文譯名是：郝德華
+爹地是現任警察局長班&#183;沃德（ Ben Ward）有史以來第一位非裔警察局長。
+
+＿＿＿
+
+其他人員：
+
+鑑識實驗室  Police Laboratory 
+艾爾文&#183;喬治 Alvin George 警探
+出勤時穿著防護服護目鏡包得密不透風，難得看到便服的樣子。
+常常把你的名字叫成萊文，對活人見過就忘、對屍體記憶力超強，喜歡討論鑑識科學的自來熟，舒壓時喜歡打掌機。
+
+
+聯邦檢察官 United States Attorney
+馬庫斯&#183;奧里科  Marcus Orrico
+噬腦人魔案負責的聯邦檢察官，重大刑案常與特調科合作
+溫和優雅熟男魅力，穿著完美講究：標配西裝、皮鞋、手工眼鏡，自帶舞台燈的男人。
+你覺得他目中無人很囂張，常常諷刺市警局都是衝動踢門的笨蛋。</span> <span class=chatlog__edited-timestamp title="2024年2月22日 上午 02:31">(edited)</span></div></div></div></div><div id=chatlog__message-container-1085463487955873862 class=chatlog__message-container data-message-id=1085463487955873862><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2023年3月15日 下午 03:24">下午 03:24</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>＿＿＿
+
+
+萊恩的角卡：
+<a href="https://docs.google.com/spreadsheets/d/12YSw9v33W_uAr7fn_oK6A4V0O-w63crjKSr682-TlF0/edit?usp=sharing">https://docs.google.com/spreadsheets/d/12YSw9v33W_uAr7fn_oK6A4V0O-w63crjKSr682-TlF0/edit?usp=sharing</a></span> <span class=chatlog__edited-timestamp title="2023年3月15日 下午 03:24">(edited)</span></div><div class=chatlog__embed><div class="chatlog__embed-color-pill chatlog__embed-color-pill--default"></div><div class=chatlog__embed-content-container><div class=chatlog__embed-content><div class=chatlog__embed-text><div class=chatlog__embed-title><a class=chatlog__embed-title-link href="https://docs.google.com/spreadsheets/d/12YSw9v33W_uAr7fn_oK6A4V0O-w63crjKSr682-TlF0/edit?usp=sharing"><div class="chatlog__markdown chatlog__markdown-preserve">瓶中小人角卡_萊恩.卡特</div></a></div><div class=chatlog__embed-description><div class="chatlog__markdown chatlog__markdown-preserve">L.L.ver_COC 7th 角色卡
+
+
+如何複製自己的角色卡？
+電腦版本：
+登入自己的Google帳號
+左上角選單點選＞＞『檔案』＞＞『建立副本』
+即可將角色卡複製進自己的Google中
+基本資料,調查員當前狀態
+調查員姓名（ＰＣ）,Lane Carter(萊恩.卡特),種類
+玩家姓名（ＰＬ）,小蒼,HP
+職業,警探
+學歷,警大畢業,MP
+背景年代,1983
+性別,男,年齡,29,Luck
+出生地,布魯克林,居住地,布魯克林
+外表特徵簡述,Sanity
+金髮藍眼標準的白人男性，一頭短髮不擅長打理顯得亂糟糟的，習慣去健身跑步，所以身形修長健壯。
+體格（Build）
+傷害加成（DB）
+角...</div></div></div><div class=chatlog__embed-thumbnail-container><a class=chatlog__embed-thumbnail-link href=https://images-ext-1.discordapp.net/external/ePbNB_I-6VgCOqmPKWyKYgzEHLBAIOGGBo4LLLChwFE/https/lh6.googleusercontent.com/UZbjo4pDMZjwbcgFMbltUUWhSZ2oOLI6TuUW-Rttw6TTNDCinJPRwxyV2xl2pR2RgTe_AzlokEMuoQ%3Dw1200-h630-p> <img class=chatlog__embed-thumbnail src=https://images-ext-1.discordapp.net/external/ePbNB_I-6VgCOqmPKWyKYgzEHLBAIOGGBo4LLLChwFE/https/lh6.googleusercontent.com/UZbjo4pDMZjwbcgFMbltUUWhSZ2oOLI6TuUW-Rttw6TTNDCinJPRwxyV2xl2pR2RgTe_AzlokEMuoQ%3Dw1200-h630-p alt=Thumbnail loading=lazy> </a></div></div></div></div></div></div></div><div id=chatlog__message-container-1085463706130976870 class=chatlog__message-container data-message-id=1085463706130976870><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="2023年3月15日 下午 03:25">下午 03:25</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>～～～以上跑團前資料提供完畢～～～
+
+→ 開始正式跑團劇情
+<a href="https://discord.com/channels/1079633597671145492/1079637788581969932/1085482339288756325" onclick="scrollToMessage(event, '1085482339288756325')">https://discord.com/channels/1079633597671145492/1079637788581969932/1085482339288756325</a></span> <span class=chatlog__edited-timestamp title="2023年3月30日 下午 08:53">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1085487691258396672 class=chatlog__message-container data-message-id=1085487691258396672><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年3月15日 下午 05:00"><a href=#chatlog__message-container-1085487691258396672>2023/3/15 下午 05:00</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+
+羅伯特給的，噬腦人魔連環殺人案情報、心理側寫資料：
+
+「噬腦人魔並沒有感情。沒有激烈的愛恨，沒有性欲，沒有特定目標。
+一些連環殺人犯選擇獵物是有標準的，但是噬腦人魔的捕獵範圍百無禁忌，年輕人、老人、小孩、男人、女人、富人、強壯者。
+據目前的調查，他缺乏共情能力、有耐心、做事有條不紊，並不把其他人當“人”來看，更像是對待物品，或者解剖青蛙，不屑與受害人有任何交流，不認為有任何宗教儀式感。」
+
+✦ 被害者被拋棄的屍體照片數張 （20位受害者只有腦袋被切開，身體十分完整）
+✦ 棄屍發現地點調查報告（多為偏遠荒地掩埋）
+✦ 班傑明住處發現的兇器和疑似腦部標本照片
+✦ 班傑明住處的血跡調查報告
+✦ 班傑明背景調查紀錄
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+
+受害者名單：（依發現順序排列）
+
+1. Cory Barry    化學老師寇瑞 - 學生發起愛心連署
+2. Nola Cantrell  健身教練諾拉  -  健身中心組織搜索團
+3. Jeremy Sexton    登山客傑瑞米   -  健行同好組織搜索隊
+4. Clay Sears    清潔工可雷
+5. Siena Hooper    獨居老者席娜
+6. Jase Rasmussen    銀行家杰西 - 媒體頭版報導
+7. Weston Buchanan    受害者    研究生偉斯頓
+8. Jeffery Beard    廚師傑佛瑞
+9. Jon Gill     計程車司機喬 - 工會登報尋人
+10. Tiffany Dickson     美容師蒂芙妮
+11. Kali Walter    店員卡莉  -  親友質疑警方調查進度緩慢
+12. Robin Foley    民航機師羅賓 - 科幻節目分析報導
+13. Richard Sharpe      高中生理查 - 家人到市警局拜託
+14. Tara Duran    雜貨店員泰拉
+15. Ashly Gillespie    大學生艾許莉
+16. Darren Gillespie     整形醫生戴倫 - 療程中病患集體求償
+17. Allan Roach    會計師亞倫
+18. Jerry Bruce     幼童傑利 - 家屬受評論節目採訪 
+19. Stanley Conrad    電視劇演員史丹利 - 媒體專輯報導
+20. Bentley Eaton      建築師本特利 - 媒體製作建築懷念特輯</span> <span class=chatlog__edited-timestamp title="2023年3月29日 下午 04:11">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1085584395408253038 class=chatlog__message-container data-message-id=1085584395408253038><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年3月15日 下午 11:24"><a href=#chatlog__message-container-1085584395408253038>2023/3/15 下午 11:24</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>羅伯特給的，一份關於班傑明&#183;瓊斯的背景調查紀錄：
+
+班傑明&#183;瓊斯（Benjamin Jones）現年21歲。
+出生於1962年紐約布朗克斯貧民區 (父母家的地址)
+有酒癮的父親  (達克斯˙瓊斯 Dax Jones) 到處打零工維生，義大利裔的母親 (碧安卡˙羅爾卡 Bianca Lorca) 在他出生不久就與人私奔，家境貧苦。
+高中輟學離家到外地打工生活，輾轉換了很多工作 (倉管員、業務助理、總務、行政人員、秘書、特助等等)。目前住在皇后區的一棟公寓頂樓加蓋 (班傑明的地址)，疑似為噬腦人魔犯案地點。 
+
+獲得地址
+
+✦ 班傑明父母家的地址：布朗克斯貧民區
+✦ 班傑明的地址：皇后區公寓頂樓加蓋
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿</span> <span class=chatlog__edited-timestamp title="2023年3月26日 上午 01:14">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1087323748954288190 class=chatlog__message-container data-message-id=1087323748954288190><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年3月20日 下午 06:36"><a href=#chatlog__message-container-1087323748954288190>2023/3/20 下午 06:36</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>巴迪製作的班傑明審訊紀錄
+
+嫌犯精神問題：
+✦  班傑明疑似精神分裂患者
+✦  班傑明疑似有三個人格：班傑明、泰勒、芬尼（已沈睡）
+✦  班傑明曾經使用抗憂鬱藥物（TCA）
+✦  班傑明疑似因家庭因素產生心理問題，現聲稱已痊癒
+
+泰勒的霍爾蒙克斯論述：
+✦  霍爾蒙克斯是一種寄生於人類大腦的遠古生物
+✦  被寄生體控制的人類：      
+      會在無自覺的情況下，失去自我意志   
+      聽見「霍爾蒙克斯（Homunculus）」這個字會產生不自然的表情
+
+犯罪供詞：
+✦  泰勒與芬尼兩人格相信霍爾蒙克斯論述
+✦  投案人格為芬尼，芬尼疑似反對泰勒的行為
+✦  班傑明對犯罪行為不知情，不敢與泰勒交流
+✦  泰勒認為被害者已經不是人類，不認為自己有犯罪
+✦  泰勒坦承曾讓被害人解脫，未詳細描述犯罪手法
+✦  泰勒聲稱母親也是霍爾蒙克斯受害者
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿</span> <span class=chatlog__edited-timestamp title="2023年3月29日 上午 09:56">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1087383763383746560 class=chatlog__message-container data-message-id=1087383763383746560><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年3月20日 下午 10:34"><a href=#chatlog__message-container-1087383763383746560>2023/3/20 下午 10:34</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>泰勒私下對你提供的資訊：
+
+『不要回應，你們之中有它們的王 』
+『假裝不相信我，否則它們會對你下手』
+『小心，它們盯上你了』
+『你的人生和這個荒謬的世界馬上會天翻地覆』</span> <span class=chatlog__edited-timestamp title="2023年3月20日 下午 10:35">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1087430339082850436 class=chatlog__message-container data-message-id=1087430339082850436><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年3月21日 上午 01:39"><a href=#chatlog__message-container-1087430339082850436>2023/3/21 上午 01:39</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+
+紐約市第六分局獲報失蹤案
+格林威治的朱利葉斯酒吧攻擊事件
+
+報案人：米洛 ‧ 麥克林（Milo Michelin）報案男友於朱利葉斯（Julius）酒吧騷亂後失蹤
+
+失蹤人：芬尼 ‧ 瓊斯（Finney Jones）據報為化妝品公司職員，獨自住在布魯克林區的公寓地下室（芬尼的地址）
+
+失蹤歷程
+7/30 （六）晚上9：00 朱利葉斯酒吧騷亂
+7/31（日）、8/1 （一）已失蹤兩日未歸</span> <span class=chatlog__edited-timestamp title="2023年6月16日 上午 03:10">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1087454165913042985 class=chatlog__message-container data-message-id=1087454165913042985><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年3月21日 上午 03:14"><a href=#chatlog__message-container-1087454165913042985>2023/3/21 上午 03:14</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>獲得地址整理
+
+✦ 班傑明父母家的地址：布朗克斯貧民區
+✦ 班傑明的地址：皇后區公寓頂樓加蓋
+✦ 芬尼的地址：布魯克林區的公寓地下室
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿</span> <span class=chatlog__edited-timestamp title="2023年3月22日 下午 01:28">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1087543434417553488 class=chatlog__message-container data-message-id=1087543434417553488><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年3月21日 上午 09:09"><a href=#chatlog__message-container-1087543434417553488>2023/3/21 上午 09:09</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>獲得情報
+
+✦ 霍爾蒙克斯的小說：紐約市立圖書館
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿</span> <span class=chatlog__edited-timestamp title="2023年3月21日 上午 09:09">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1087615950305640448 class=chatlog__message-container data-message-id=1087615950305640448><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/2.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=nu8547 data-user-id=581464405267447808>nu</span> <span class=chatlog__timestamp title="2023年3月21日 下午 01:57"><a href=#chatlog__message-container-1087615950305640448>2023/3/21 下午 01:57</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>大敘述時代</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1087616195798241290 class=chatlog__message-container data-message-id=1087616195798241290><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年3月21日 下午 01:58"><a href=#chatlog__message-container-1087616195798241290>2023/3/21 下午 01:58</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>貼心的線索自動存擋區</span> <span class=chatlog__edited-timestamp title="2023年3月21日 下午 01:59">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1090297892658479225 class=chatlog__message-container data-message-id=1090297892658479225><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年3月28日 下午 11:34"><a href=#chatlog__message-container-1090297892658479225>2023/3/28 下午 11:34</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿ 
+
+米洛訪談筆記
+
+✦  米洛和芬尼是在朱利葉斯酒吧認識
+✦  米洛在兩個月前和芬尼交往
+✦  交往期間，週六日米洛都待在芬尼家
+✦  7/30 （六）晚上9：00 朱利葉斯酒吧騷亂後芬尼失蹤
+✦  7/31（日） 芬尼星期日晚上到警局投案
+✦  泰勒疑似在朱利葉斯酒吧跳舞
+✦  班傑明可能曾在強生化妝品公司 (JOHNSON&#180;S&#174;️）當特助
+
+獲得地址整理
+
+✦ 班傑明父母家的地址：布朗克斯貧民區
+✦ 班傑明住處的地址：皇后區公寓頂樓加蓋
+✦ 芬尼住處的地址：布魯克林區的公寓地下室
+
+已知地址情報
+
+✦  格林威治的朱利葉斯酒吧 (Julius&#39;)
+✦  靠近梅西百貨的鉑麗商業大樓(Platinum Building) 強生化妝品公司
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿</span> <span class=chatlog__edited-timestamp title="2023年4月12日 上午 11:12">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1094541992039567411 class=chatlog__message-container data-message-id=1094541992039567411><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年4月9日 下午 04:39"><a href=#chatlog__message-container-1094541992039567411>2023/4/9 下午 04:39</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><a href="https://discord.com/channels/1079633597671145492/1079637927027560520/1085462949394645042" onclick="scrollToMessage(event, '1085462949394645042')">https://discord.com/channels/1079633597671145492/1079637927027560520/1085462949394645042</a>
+新增：鑑識人員和檢察官的資料
+補充：巴迪資料和艾米住處</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1094927211687055411 class=chatlog__message-container data-message-id=1094927211687055411><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年4月10日 下午 06:09"><a href=#chatlog__message-container-1094927211687055411>2023/4/10 下午 06:09</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>新增：發現巴迪的大秘密，寫上人物資料囉~~<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌈"
+    title="rainbow"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f308.svg"></span> <span class=chatlog__edited-timestamp title="2023年4月10日 下午 06:10">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1117377698801664030 class=chatlog__message-container data-message-id=1117377698801664030><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/654207190789390366/f0c4616cf6e26c2e84400f06d712941f.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=aoi87 data-user-id=654207190789390366>老蒼</span> <span class=chatlog__timestamp title="2023年6月11日 下午 05:00"><a href=#chatlog__message-container-1117377698801664030>2023/6/11 下午 05:00</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+
+馬修‧薩拉札 （Matthew Salazar）
+
+46歲，英國混葡萄牙裔美國人，出生於費城小葡萄牙天主教社區，賓夕法尼亞大學法學院畢業，畢業後在華盛頓擔任過助理檢察官，目前任職於紐約大學法學院擔任刑法助理教授，現居於曼哈頓下城區。
+
+說話特徵：說話略帶英國與葡語口音，強調重音和音節，字尾r不發音。
+動作特徵：站立與走路姿態放鬆。 
+
+證件資料：一本有馬修&#183;薩拉札（Matthew Salazar）照片的有效護照。賓夕法尼亞大學法學院的學位證書。華盛頓助理檢察官的工作背景文件。紐約大學法學院刑法助理教授職位的教師證與一些名片。
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1123300127864524801 class=chatlog__message-container data-message-id=1123300127864524801><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年6月28日 上午 01:13"><a href=#chatlog__message-container-1123300127864524801>2023/6/28 上午 01:13</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>--------------
+《 被編輯者研究報告》
+
+被編輯者的特徵：
+
+1. 關鍵詞
+「霍爾蒙克斯 Homunculus」的設定。
+被編輯者聽不見關鍵詞，也無法說出關鍵詞。
+看得見卻唸不出來，會讓他們懷疑與不信任。
+
+2. 偽造記憶
+被植入捏造的記憶或印象，認為是親身經歷過的體驗，並且深信不疑。
+被編輯者會合理化記憶而產生更多記憶細節，將那段記憶越想越完整。
+被編輯者會將證物看成記憶中的事物，或質疑證物是假的、不存在的。
+
+3. 強烈信念
+被植入某種強烈信念，認為是自己產生的想法，無法被動搖。
+產生符合信念的價值觀，以新的價值觀來思考，產生驅動力。
+遇到越多阻礙、挫折往往信念越強，被編輯者會偏激狂熱化。
+
+4. 人格變化
+被偽造的記憶如果覆蓋了大部分的人生，會產生截然不同的人格。
+變成完全不同的人，思考方式、行為方式、個性喜好皆有所不同。
+偽造的記憶若覆蓋人生中的關鍵時刻、重大事件、里程碑、轉變時刻、高峰或低谷，也會大幅改變一個人的性格。
+
+被編輯程度分辨：
+
+輕微   &lt;-------------------&gt;   嚴重
+偽造記憶  &lt; 強烈信念 &lt; 人格變化
+
+--------------</span> <span class=chatlog__edited-timestamp title="2023年10月16日 上午 02:06">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1123663099325579464 class=chatlog__message-container data-message-id=1123663099325579464><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年6月29日 上午 01:15"><a href=#chatlog__message-container-1123663099325579464>2023/6/29 上午 01:15</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>瓶中小人-地圖已隨劇情更新
+<a href="https://discord.com/channels/1079633597671145492/1079637927027560520/1079704148863373333" onclick="scrollToMessage(event, '1079704148863373333')">https://discord.com/channels/1079633597671145492/1079637927027560520/1079704148863373333</a></span> <span class=chatlog__edited-timestamp title="2023年9月26日 上午 01:47">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1155923572762628116 class=chatlog__message-container data-message-id=1155923572762628116><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年9月26日 上午 01:47"><a href=#chatlog__message-container-1155923572762628116>2023/9/26 上午 01:47</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>瓶中小人-地圖已隨劇情更新
+<a href="https://discord.com/channels/1079633597671145492/1079637927027560520/1079704148863373333" onclick="scrollToMessage(event, '1079704148863373333')">https://discord.com/channels/1079633597671145492/1079637927027560520/1079704148863373333</a></span> <span class=chatlog__edited-timestamp title="2023年9月26日 上午 01:47">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1178723413964107877 class=chatlog__message-container data-message-id=1178723413964107877><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年11月27日 下午 11:46"><a href=#chatlog__message-container-1178723413964107877>2023/11/27 下午 11:46</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>瓶中小人-地圖已隨劇情更新
+
+增加戴蒙過去的行經路線
+<a href="https://discord.com/channels/1079633597671145492/1079637927027560520/1079704148863373333" onclick="scrollToMessage(event, '1079704148863373333')">https://discord.com/channels/1079633597671145492/1079637927027560520/1079704148863373333</a></span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1190650511783891007 class=chatlog__message-container data-message-id=1190650511783891007><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年12月30日 下午 09:40"><a href=#chatlog__message-container-1190650511783891007>2023/12/30 下午 09:40</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>約克維爾大廈的結構情報：
+
+16 樓以下是高級辦公室，與住戶分開出入口。
+17 樓有一系列綜合娛樂空間，包括餐廳、咖啡廳，包含瑜伽教室的健身中心，包含桑拿與蒸氣室的水療中心。
+33 樓是私人俱樂部包含 70 英尺高的游泳池、圖書館、兒童遊戲室和私人電影院。
+35 樓的空中花園則是寬廣的宴會空間，另備有停機坪可供直升機起降。
+每層樓都有面朝中央公園的大露台，與汽車電梯與放轎車的私人迴廊。
+
+＋
+
+米凱拉透過清潔人員的情資搜集：
+
+羅姆一個人住在有空中花園的 35 樓。
+希特拉&#183;鉑西（Stella Percy) 和兒子艾莫斯&#183;強森 (Amos Johnson)，以及馬庫斯和輪班護衛住在 34 樓。
+33 樓是較不嚴密看守的公共空間，公共設施開放時間為 08:00～22:00，每天有兩位管理人員輪班。
+三班制警衛，每班有 8 名警衛（早班為 08:00～16:00，中班為 16：00～24:00，夜班為24:00～8:00）
+每天下午有打掃清潔人員打掃四小時。</span> <span class=chatlog__edited-timestamp title="2024年1月16日 上午 01:55">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1190760980133720094 class=chatlog__message-container data-message-id=1190760980133720094><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2023年12月31日 上午 04:59"><a href=#chatlog__message-container-1190760980133720094>2023/12/31 上午 04:59</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>《 銜尾蛇之約克維爾暗殺行動》詳細計畫：
+
+干擾系統：
+克勞恩的情報車會在公園大道周邊的廢棄停車場待命，7月2日下午由米凱拉偽裝成資深被編輯的清潔人員 伊麗‧韋爾 (Elly Ware)，於一樓警衛室附近管道間，安裝無線電信號設備與暗藏武器，克勞恩會及時干擾並控制整棟大樓的監控系統、電子設施等。
+
+入侵建築：
+約克維爾豪邸的建築結構，雙車道出入口、前後大門與四個逃生小門是可能的逃生路線。
+戴蒙與萊恩將於7月3日凌晨行動，妝扮成警衛的模樣，從雙車道出入口入侵。使用非致命武器快速擊昏警衛，將他們綑綁拖到休息室，取走他們身上的通訊設備與武器。
+
+到達樓層：
+共有六台電梯，你們搭乘克勞恩控制的其中一台電梯來到 33 樓公共空間。
+從公共空間游泳池外的露台，使用專業攀爬器材 (拋繩槍、安全繩、鉤爪、升降設備等) 進行攀爬。先爬上 34 樓兩側露台，再爬上35 樓的空中花園。最後由空中花園進入羅姆的居所，使用玻璃切割器與吸盤工具進入室內。
+
+執行暗殺：
+暗殺武器包含PSS滅音手槍、ASP手槍、M9 刺刀等。由萊恩主要執行刺殺，戴蒙會殿後掩護萊恩行動。
+
+目標逃逸：
+35 樓空中花園上方有一層停機坪。自由幽靈沒有肩射式飛彈 (MANPADS )，也無法使用射程較短的迫擊砲  (M224) 或重型機槍 (M2) 擊落直升機。一旦羅姆搭上直升機可能成功逃脫，必須盡量在他逃走前擊殺。
+
+遠距狙擊：
+中央公園大都會博物館屋頂已部署遠距狙擊手安狄，使用當目標靠近大樓外緣、露台、窗前可通知安狄使用巴雷特 (Barrett M82) 狙擊槍進行遠距狙擊，高樓層極易到受風向、風速、重力干擾。
+
+撤離現場：
+盡量避免與馬庫斯與特勤人員對峙，必要時使用電擊槍或煙霧彈，或引爆轉移注意力的小型定時、遙控炸彈。
+無論暗殺任務完成於否，由規劃好的四條逃生路線迅速撤離，從後門的道路由卡爾接應離開。
+
+低空跳傘：
+遇到意外狀況如大樓火災、倒塌等意外事故，或確認無法經由逃生路線撤離時，可由頂樓以低空跳傘逃脫。跳傘會增加被射擊或意外摔傷風險，需避開馬路往中央公園樹林方向降落，確認安全降落後聯繫接應。</span> <span class=chatlog__edited-timestamp title="2024年1月19日 上午 02:07">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1192167597207195799 class=chatlog__message-container data-message-id=1192167597207195799><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2024年1月4日 上午 02:08"><a href=#chatlog__message-container-1192167597207195799>2024/1/4 上午 02:08</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>《 銜尾蛇之約克維爾暗殺行動》
+
+可使用武器列表： 
+<ul><li>ASP手槍，680克，裝載7發子彈 (9&#215;19公釐帕拉貝倫彈 Parabellum) ，有效射程100公尺。備用彈夾也有7發，共14發子彈。可視殘彈數的半透明握把，與金黃色的流浪者（Guttersnipe）照準系統。 </li></ul><ul><li>PSS滅音手槍，700公克，裝載6發子彈(PSS專門開發的7.62&#215;41靜音彈SP-4)，有效射程25~50公尺。沒有備用彈夾。擊發時產生&#160;122 分貝音量，無噪音、煙霧或爆炸逸出。</li></ul><ul><li>泰瑟(taser)電擊槍，發射後會有兩支針頭連導線擊進對方體內，最大射程7公尺。可以隔著5公分厚的衣服放電，電壓1200 伏特。可以短時間造成肌肉失能，對成人電擊超過15秒有致命危險。 </li></ul><ul><li>M9 刺刀/格鬥刀，可當槍用刺刀(可裝在M16 自動步槍)和格鬥匕首外，還可以當野戰工具刀使用。防滑圓柱形刀柄，刀身無血槽。結合刀鞘可剪直徑4mm以下鐵絲網。 </li></ul>
+＋
+
+工具與隨身裝備列表： 
+<ul><li>業攀爬器材：拋繩槍、安全繩、鉤爪發射器、鉤爪、岩楔、鉤環、扁帶、攀登繩、安全吊帶、電動爬繩器、手持升降器/下降氣、防墜器等。</li></ul><ul><li>煙霧彈(Smoke grenade)使用引信點燃鋼罐，磷在空氣中著火，燃燒時發出明亮的黃色火焰，同時產生大量白煙（五氧化二磷），丟在易燃物上可能引起火災。高濃度煙霧會對眼睛、鼻子黏膜和呼吸道造成暫時刺激。</li></ul><ul><li>眩暈手榴彈(Stun grenade)爆炸後會產生眩目的閃光和極度響亮的爆炸聲，用於暫時迷惑敵人的感官。產生約 7兆坎德拉(Mcd) 的致盲閃光和超過 170分貝(dB) 的強烈爆炸聲。 </li></ul><ul><li>簡易定時炸彈（Improvised Explosive Device, IED）由電子計時器引爆。 與眩暈手榴彈相同，引爆時會產生巨大的噪音和明亮的光線，釋放化學刺激物：辣椒氣體或催淚瓦斯。 </li></ul><ul><li>遙控引爆裝置（Remote Controlled Improvised Explosive Device, RCIED）使用電磁訊號遙控引爆的簡易爆炸裝置，與眩暈手榴彈相同，引爆時會產生巨大的噪音和明亮的光線，釋放化學刺激物：辣椒氣體或催淚瓦斯。</li></ul><ul><li>低空降落傘 (BASE Jumping parachutes) 只有一個主傘構成。兩人的體重約為198磅左右，需要300 平方英尺大的降落傘蓋。從 111 公尺高的樓層跳下必須在 1.5 ~ 2 秒內開傘，需以手持式跳躍以增加開傘速度。</li></ul></span> <span class=chatlog__edited-timestamp title="2024年1月16日 上午 01:54">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1196460142728843325 class=chatlog__message-container data-message-id=1196460142728843325><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2024年1月15日 下午 10:25"><a href=#chatlog__message-container-1196460142728843325>2024/1/15 下午 10:25</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>武器攻擊方式：</span></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1079637927027560520/1196460142414266368/2Q.png?ex=662fadd7&amp;is=661d38d7&amp;hm=46379cd46a0b62b39304c48c829407743bcc73ecbe0f638f97f41695d4e4dcff&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1079637927027560520/1196460142414266368/2Q.png?ex=662fadd7&amp;is=661d38d7&amp;hm=46379cd46a0b62b39304c48c829407743bcc73ecbe0f638f97f41695d4e4dcff&amp;" alt="Image attachment" title="Image: 2Q.png (177.17 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1201917006438482051 class=chatlog__message-container data-message-id=1201917006438482051><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2024年1月30日 下午 11:49"><a href=#chatlog__message-container-1201917006438482051>2024/1/30 下午 11:49</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>《 瓶中小人-劇情時程表》
+
+<h2>1983/8/1 (一)</h2>假期被噬腦人魔案中斷
+班傑明 / 泰勒多重人格審訊
+警局記者會 見到柯林
+報案：米洛石牆攻擊案
+莎樂美牛排館晚餐，被戴蒙救
+送喝醉戴蒙回家，透過戴黛安拿到書
+戴蒙考慮去FBI
+晚上睡不著看書
+被小人貼貼紙
+
+<h2>1983/8/2 (二)</h2>賽任咖啡早餐見米洛
+早上檔案室發生火災，班傑明審訊檔案損失
+重新錄了口供，長官要結案（班傑明昏倒）
+龍蝦堡午餐
+與米洛戴蒙查芬尼粉紅地下室
+紐約漢堡晚餐
+戴蒙告白（1車）
+噬腦人魔逃脫＋馬庫斯抓捕逃犯
+和巴迪聊天整理資料
+在警局休息室睡
+
+<h2>1983/8/3 (三)</h2>車上吃早餐 （米洛由法蘭克律師交保）
+布朗克斯平民區調查班傑明父親
+襪子怪獸調查班傑明母親
+布朗克斯動物園午餐，計畫旅行
+討論案球，馬庫斯被強迫中斷會議
+賽任咖啡見米洛，拿到法蘭克邀請函
+潛入柯林莊園派對，泰勒小教堂祭壇（小Boss戰）
+逮捕柯林與泰勒
+戴蒙被萊恩爸爸面試
+戴蒙抱著睡
+
+<h2>1983/8/4 (四)</h2>萊恩家溫馨早餐
+與米洛最後一次審訊班傑明
+班傑明移監瑞克島監獄
+萊恩家肉排午餐＋戴蒙圍裙
+萊恩家拍攝全家福
+萊恩家康尼島樂園，焦糖蘋果鋪
+浪漫煙火晚餐
+送戴蒙回家
+
+<h2>1983/8/5 (五) </h2>早上展望公園慢跑，與艾米出櫃
+公園熱狗早餐，戴蒙拿繪本給你
+白鴿庇護所，與勞拉艾娜午餐後掃墓
+喬許被邪教魔影抓走
+帶巴迪勇闖灰燼谷救喬許
+晚餐後在戴蒙家與黛安聊天
+戴蒙家哄睡
+
+<h2>1983/8/6 (六) </h2>戴蒙愛的咖啡鹹派早餐
+戴蒙送對錶，圍裙play（2車）
+公路旅行前往塞內卡湖
+酒莊巡禮+夕陽遊船
+湖邊小木屋篝火彈唱看星星
+萊恩與戴蒙坦承過去
+蜜月夜晚（3車）
+
+<h2>1983/8/7 (日) </h2>湖邊小屋早餐
+搭乘法蘭克與米洛亂入
+搭遊艇前往瀑布之旅 
+車庫制服手銬Play (4車）
+公路夜車回家睡覺
+
+<h2>黑洞兩年</h2>遇見羅姆，展示能力
+被軟禁在南太平洋海島
+
+<h2>1985/6/29 (六)</h2>被自由幽靈組織救出
+搭機回美國再見戴蒙
+再來一杯酒吧 + 自由幽靈成員介紹
+夜宿酒吧，獲得世界情報
+與戴蒙重溫過去，交換情報
+
+<h2>1985/6/30 (日)</h2>自由幽靈酒吧早餐
+國慶暗殺計畫討論
+公園試槍選武器
+同志大遊行與巴迪喬許
+賽任咖啡買點心
+回酒吧獲得情報與戴蒙討論
+酒吧做焦糖蘋果吃晚餐
+坎貝爾餐廳
+實驗室抽血掃描
+實驗室爆炸時被戴蒙救出
+再見羅姆（小Boss戰）
+藝廊安全屋過夜
+
+<h2>1985/7/1 (一)</h2>藝廊鋼琴換藥play（5車）
+藝廊沙發三明治早餐
+中央公園船屋電話
+酒廠地下隧道叛徒揭露
+朱利葉斯酒吧
+銀行金庫開保險箱
+橋下與法蘭克見面
+酒廠宵夜蘋果派伊萬揭密
+信件揭秘、碟片揭秘
+紅酒大戰前夜車（6車）
+
+<h2>1985/7/2 (二)</h2>早晨小車（6.5車？）
+俄羅斯鬆餅+羅宋湯早餐
+與戴蒙討論暗殺計畫
+影片揭密1
+古巴披薩午餐
+高空繩索訓練
+影片揭密2
+駭入約克維爾
+買戒指+浪漫翡翠綠晚餐
+入侵約克維爾迎擊羅姆
+
+<h2>1985/7/3 (三)</h2>羅姆死亡
+所有被編輯者恢復記憶
+羅姆死因揭秘
+世界恢復正軌，終於能回家團圓
+粉紅團大結局</span> <span class=chatlog__edited-timestamp title="2024年1月31日 上午 12:15">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1201920263688835152 class=chatlog__message-container data-message-id=1201920263688835152><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/avatars/458303539907788801/f9d057c5409cf97ddd585920e7b27439.png?size=512" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=kuro1814 data-user-id=458303539907788801>KP</span> <span class=chatlog__timestamp title="2024年1月31日 上午 12:02"><a href=#chatlog__message-container-1201920263688835152>2024/1/31 上午 12:02</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>瓶中小人團地圖更新：
+全團地點都上去囉！<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="🌈"
+    title="rainbow"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f308.svg"> 
+<a href="https://www.google.com/maps/d/u/0/edit?mid=16rA-TX9D0oRifbI66ObzamLaRxqk4IA&amp;usp=sharing">https://www.google.com/maps/d/u/0/edit?mid=16rA-TX9D0oRifbI66ObzamLaRxqk4IA&amp;usp=sharing</a></span> <span class=chatlog__edited-timestamp title="2024年1月31日 上午 12:02">(edited)</span></div><div class=chatlog__embed><div class="chatlog__embed-color-pill chatlog__embed-color-pill--default"></div><div class=chatlog__embed-content-container><div class=chatlog__embed-content><div class=chatlog__embed-text><div class=chatlog__embed-title><a class=chatlog__embed-title-link href="https://www.google.com/maps/d/u/0/edit?mid=16rA-TX9D0oRifbI66ObzamLaRxqk4IA&amp;usp=sharing"><div class="chatlog__markdown chatlog__markdown-preserve">瓶中小人團 - Google My Maps</div></a></div><div class=chatlog__embed-description><div class="chatlog__markdown chatlog__markdown-preserve">1983年的紐約</div></div></div><div class=chatlog__embed-thumbnail-container><a class=chatlog__embed-thumbnail-link href=https://images-ext-1.discordapp.net/external/9c02mS-DfRciEKfPsLq9yOiyEZcy_CMISKQV3OhBuCA/%3Fmid%3D16rA-TX9D0oRifbI66ObzamLaRxqk4IA/https/www.google.com/maps/d/thumbnail> <img class=chatlog__embed-thumbnail src=https://images-ext-1.discordapp.net/external/9c02mS-DfRciEKfPsLq9yOiyEZcy_CMISKQV3OhBuCA/%3Fmid%3D16rA-TX9D0oRifbI66ObzamLaRxqk4IA/https/www.google.com/maps/d/thumbnail alt=Thumbnail loading=lazy> </a></div></div></div></div></div></div></div></div>
+
+</div>
+<div class=postamble><div class=postamble__entry>Exported 32 message(s)</div><div class=postamble__entry>Timezone: UTC+8</div></div>
